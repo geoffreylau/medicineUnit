@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		BE164DCB1DE6BD81004CE859 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE164DCA1DE6BD80004CE859 /* AFNetworking.framework */; };
 		BE164DCD1DE6C889004CE859 /* MedicineNetworkImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DCC1DE6C889004CE859 /* MedicineNetworkImpl.swift */; };
+		BE164DCF1DE6DCD2004CE859 /* MedicineRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DCE1DE6DCD2004CE859 /* MedicineRootViewController.swift */; };
+		BE164DD61DE6DDC8004CE859 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DD51DE6DDC8004CE859 /* HomePageViewController.swift */; };
+		BE164DD81DE6DE32004CE859 /* MedicineBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DD71DE6DE32004CE859 /* MedicineBaseViewController.swift */; };
+		BE164DDA1DE6E1E8004CE859 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DD91DE6E1E8004CE859 /* ProductViewController.swift */; };
+		BE164DDC1DE6E264004CE859 /* ResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DDB1DE6E264004CE859 /* ResourceViewController.swift */; };
+		BE164DDE1DE6E27F004CE859 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DDD1DE6E27F004CE859 /* MeViewController.swift */; };
+		BE164DE01DE6E29E004CE859 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DDF1DE6E29E004CE859 /* LoginViewController.swift */; };
 		BE4ACA9A1DDEAF9500CE0D31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4ACA991DDEAF9500CE0D31 /* AppDelegate.swift */; };
 		BE4ACA9C1DDEAF9500CE0D31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4ACA9B1DDEAF9500CE0D31 /* ViewController.swift */; };
 		BE4ACAA11DDEAF9500CE0D31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4ACAA01DDEAF9500CE0D31 /* Assets.xcassets */; };
@@ -19,6 +26,13 @@
 /* Begin PBXFileReference section */
 		BE164DCA1DE6BD80004CE859 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = thirdlib/AFNetworking.framework; sourceTree = "<group>"; };
 		BE164DCC1DE6C889004CE859 /* MedicineNetworkImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineNetworkImpl.swift; sourceTree = "<group>"; };
+		BE164DCE1DE6DCD2004CE859 /* MedicineRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineRootViewController.swift; sourceTree = "<group>"; };
+		BE164DD51DE6DDC8004CE859 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		BE164DD71DE6DE32004CE859 /* MedicineBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineBaseViewController.swift; sourceTree = "<group>"; };
+		BE164DD91DE6E1E8004CE859 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		BE164DDB1DE6E264004CE859 /* ResourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceViewController.swift; sourceTree = "<group>"; };
+		BE164DDD1DE6E27F004CE859 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		BE164DDF1DE6E29E004CE859 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BE4ACA961DDEAF9500CE0D31 /* medicineUnit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medicineUnit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4ACA991DDEAF9500CE0D31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE4ACA9B1DDEAF9500CE0D31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +55,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE164DD01DE6DD17004CE859 /* homepage */ = {
+			isa = PBXGroup;
+			children = (
+				BE164DD51DE6DDC8004CE859 /* HomePageViewController.swift */,
+			);
+			name = homepage;
+			sourceTree = "<group>";
+		};
+		BE164DD11DE6DD24004CE859 /* product */ = {
+			isa = PBXGroup;
+			children = (
+				BE164DD91DE6E1E8004CE859 /* ProductViewController.swift */,
+			);
+			name = product;
+			sourceTree = "<group>";
+		};
+		BE164DD21DE6DD30004CE859 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				BE164DDB1DE6E264004CE859 /* ResourceViewController.swift */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		BE164DD31DE6DD3B004CE859 /* me */ = {
+			isa = PBXGroup;
+			children = (
+				BE164DDD1DE6E27F004CE859 /* MeViewController.swift */,
+			);
+			name = me;
+			sourceTree = "<group>";
+		};
+		BE164DD41DE6DD43004CE859 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				BE164DDF1DE6E29E004CE859 /* LoginViewController.swift */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
 		BE4ACA8D1DDEAF9500CE0D31 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +148,11 @@
 		BE655F8D1DE56D2C005295AC /* businessmodule */ = {
 			isa = PBXGroup;
 			children = (
+				BE164DD41DE6DD43004CE859 /* login */,
+				BE164DD31DE6DD3B004CE859 /* me */,
+				BE164DD21DE6DD30004CE859 /* resource */,
+				BE164DD11DE6DD24004CE859 /* product */,
+				BE164DD01DE6DD17004CE859 /* homepage */,
 			);
 			name = businessmodule;
 			sourceTree = "<group>";
@@ -125,6 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				BE655F921DE56EBF005295AC /* ProtocalManager.swift */,
+				BE164DCE1DE6DCD2004CE859 /* MedicineRootViewController.swift */,
+				BE164DD71DE6DE32004CE859 /* MedicineBaseViewController.swift */,
 			);
 			name = common;
 			sourceTree = "<group>";
@@ -201,10 +262,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE164DE01DE6E29E004CE859 /* LoginViewController.swift in Sources */,
+				BE164DDC1DE6E264004CE859 /* ResourceViewController.swift in Sources */,
+				BE164DDE1DE6E27F004CE859 /* MeViewController.swift in Sources */,
 				BE655F971DE56FBF005295AC /* MedicineNetworkProtocal.swift in Sources */,
+				BE164DD61DE6DDC8004CE859 /* HomePageViewController.swift in Sources */,
 				BE164DCD1DE6C889004CE859 /* MedicineNetworkImpl.swift in Sources */,
+				BE164DCF1DE6DCD2004CE859 /* MedicineRootViewController.swift in Sources */,
 				BE655F931DE56EBF005295AC /* ProtocalManager.swift in Sources */,
 				BE4ACA9C1DDEAF9500CE0D31 /* ViewController.swift in Sources */,
+				BE164DDA1DE6E1E8004CE859 /* ProductViewController.swift in Sources */,
+				BE164DD81DE6DE32004CE859 /* MedicineBaseViewController.swift in Sources */,
 				BE4ACA9A1DDEAF9500CE0D31 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
