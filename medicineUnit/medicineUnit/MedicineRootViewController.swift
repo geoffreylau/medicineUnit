@@ -39,5 +39,8 @@ class MedicineRootViewController: UITabBarController {
         meController.tabBarItem.title = "我的"
         meController.tabBarItem.image = UIImage(named: "metab_normal")
         meController.tabBarItem.selectedImage = UIImage(named: "metab_selected")
+        let meNav = UINavigationController(rootViewController: meController)
+        
+        self.viewControllers = [homeNav, productNav, resourceNav, meNav]
     }
 }
