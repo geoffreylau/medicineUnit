@@ -7,21 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE164DCB1DE6BD81004CE859 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE164DCA1DE6BD80004CE859 /* AFNetworking.framework */; };
+		BE164DCD1DE6C889004CE859 /* MedicineNetworkImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DCC1DE6C889004CE859 /* MedicineNetworkImpl.swift */; };
 		BE4ACA9A1DDEAF9500CE0D31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4ACA991DDEAF9500CE0D31 /* AppDelegate.swift */; };
 		BE4ACA9C1DDEAF9500CE0D31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4ACA9B1DDEAF9500CE0D31 /* ViewController.swift */; };
-		BE4ACA9F1DDEAF9500CE0D31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4ACA9D1DDEAF9500CE0D31 /* Main.storyboard */; };
 		BE4ACAA11DDEAF9500CE0D31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4ACAA01DDEAF9500CE0D31 /* Assets.xcassets */; };
-		BE4ACAA41DDEAF9500CE0D31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4ACAA21DDEAF9500CE0D31 /* LaunchScreen.storyboard */; };
+		BE655F931DE56EBF005295AC /* ProtocalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE655F921DE56EBF005295AC /* ProtocalManager.swift */; };
+		BE655F971DE56FBF005295AC /* MedicineNetworkProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE655F961DE56FBF005295AC /* MedicineNetworkProtocal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE164DCA1DE6BD80004CE859 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = thirdlib/AFNetworking.framework; sourceTree = "<group>"; };
+		BE164DCC1DE6C889004CE859 /* MedicineNetworkImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineNetworkImpl.swift; sourceTree = "<group>"; };
 		BE4ACA961DDEAF9500CE0D31 /* medicineUnit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medicineUnit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4ACA991DDEAF9500CE0D31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE4ACA9B1DDEAF9500CE0D31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BE4ACA9E1DDEAF9500CE0D31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE4ACAA01DDEAF9500CE0D31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BE4ACAA31DDEAF9500CE0D31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE4ACAA51DDEAF9500CE0D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE655F921DE56EBF005295AC /* ProtocalManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocalManager.swift; sourceTree = "<group>"; };
+		BE655F961DE56FBF005295AC /* MedicineNetworkProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineNetworkProtocal.swift; sourceTree = "<group>"; };
+		BE655F981DE59D7D005295AC /* medicineUnit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "medicineUnit-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE164DCB1DE6BD81004CE859 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +60,73 @@
 		BE4ACA981DDEAF9500CE0D31 /* medicineUnit */ = {
 			isa = PBXGroup;
 			children = (
+				BE655F981DE59D7D005295AC /* medicineUnit-Bridging-Header.h */,
+				BE655F911DE56E4F005295AC /* common */,
+				BE655F8D1DE56D2C005295AC /* businessmodule */,
+				BE655F8C1DE56D22005295AC /* basemodule */,
+				BE655F891DE56CAC005295AC /* thirdlib */,
 				BE4ACA991DDEAF9500CE0D31 /* AppDelegate.swift */,
 				BE4ACA9B1DDEAF9500CE0D31 /* ViewController.swift */,
-				BE4ACA9D1DDEAF9500CE0D31 /* Main.storyboard */,
 				BE4ACAA01DDEAF9500CE0D31 /* Assets.xcassets */,
-				BE4ACAA21DDEAF9500CE0D31 /* LaunchScreen.storyboard */,
 				BE4ACAA51DDEAF9500CE0D31 /* Info.plist */,
 			);
 			path = medicineUnit;
+			sourceTree = "<group>";
+		};
+		BE655F891DE56CAC005295AC /* thirdlib */ = {
+			isa = PBXGroup;
+			children = (
+				BE164DCA1DE6BD80004CE859 /* AFNetworking.framework */,
+			);
+			name = thirdlib;
+			sourceTree = "<group>";
+		};
+		BE655F8C1DE56D22005295AC /* basemodule */ = {
+			isa = PBXGroup;
+			children = (
+				BE655F901DE56E04005295AC /* log */,
+				BE655F8F1DE56DBA005295AC /* db */,
+				BE655F8E1DE56D3D005295AC /* network */,
+			);
+			name = basemodule;
+			sourceTree = "<group>";
+		};
+		BE655F8D1DE56D2C005295AC /* businessmodule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = businessmodule;
+			sourceTree = "<group>";
+		};
+		BE655F8E1DE56D3D005295AC /* network */ = {
+			isa = PBXGroup;
+			children = (
+				BE655F961DE56FBF005295AC /* MedicineNetworkProtocal.swift */,
+				BE164DCC1DE6C889004CE859 /* MedicineNetworkImpl.swift */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		BE655F8F1DE56DBA005295AC /* db */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = db;
+			sourceTree = "<group>";
+		};
+		BE655F901DE56E04005295AC /* log */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = log;
+			sourceTree = "<group>";
+		};
+		BE655F911DE56E4F005295AC /* common */ = {
+			isa = PBXGroup;
+			children = (
+				BE655F921DE56EBF005295AC /* ProtocalManager.swift */,
+			);
+			name = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +162,7 @@
 					BE4ACA951DDEAF9500CE0D31 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = UP84TZHWYP;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,9 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE4ACAA41DDEAF9500CE0D31 /* LaunchScreen.storyboard in Resources */,
 				BE4ACAA11DDEAF9500CE0D31 /* Assets.xcassets in Resources */,
-				BE4ACA9F1DDEAF9500CE0D31 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,31 +201,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE655F971DE56FBF005295AC /* MedicineNetworkProtocal.swift in Sources */,
+				BE164DCD1DE6C889004CE859 /* MedicineNetworkImpl.swift in Sources */,
+				BE655F931DE56EBF005295AC /* ProtocalManager.swift in Sources */,
 				BE4ACA9C1DDEAF9500CE0D31 /* ViewController.swift in Sources */,
 				BE4ACA9A1DDEAF9500CE0D31 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		BE4ACA9D1DDEAF9500CE0D31 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE4ACA9E1DDEAF9500CE0D31 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BE4ACAA21DDEAF9500CE0D31 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE4ACAA31DDEAF9500CE0D31 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BE4ACAA61DDEAF9500CE0D31 /* Debug */ = {
@@ -204,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -247,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -259,11 +307,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UP84TZHWYP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/medicineUnit/thirdlib",
+				);
 				INFOPLIST_FILE = medicineUnit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingan.medicineUnit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "medicineUnit/medicineUnit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -272,11 +329,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UP84TZHWYP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/medicineUnit/thirdlib",
+				);
 				INFOPLIST_FILE = medicineUnit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingan.medicineUnit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "medicineUnit/medicineUnit-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -300,6 +365,7 @@
 				BE4ACAAA1DDEAF9500CE0D31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
