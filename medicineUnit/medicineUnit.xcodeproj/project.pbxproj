@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE164DCB1DE6BD81004CE859 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE164DCA1DE6BD80004CE859 /* AFNetworking.framework */; };
+		8FF0C1971DE73CE700C0528F /* HomePageSlideAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0C1961DE73CE700C0528F /* HomePageSlideAd.swift */; };
+		8FF0C19B1DE747CF00C0528F /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE164DCA1DE6BD80004CE859 /* AFNetworking.framework */; };
+		8FF0C19C1DE747CF00C0528F /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE164DCA1DE6BD80004CE859 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FF0C19F1DE7498200C0528F /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF0C19E1DE7498200C0528F /* WebImage.framework */; };
 		BE164DCD1DE6C889004CE859 /* MedicineNetworkImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DCC1DE6C889004CE859 /* MedicineNetworkImpl.swift */; };
 		BE164DCF1DE6DCD2004CE859 /* MedicineRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DCE1DE6DCD2004CE859 /* MedicineRootViewController.swift */; };
 		BE164DD61DE6DDC8004CE859 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DD51DE6DDC8004CE859 /* HomePageViewController.swift */; };
@@ -23,7 +26,23 @@
 		BE655F971DE56FBF005295AC /* MedicineNetworkProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE655F961DE56FBF005295AC /* MedicineNetworkProtocal.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8FF0C19D1DE747CF00C0528F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8FF0C19C1DE747CF00C0528F /* AFNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8FF0C1961DE73CE700C0528F /* HomePageSlideAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageSlideAd.swift; sourceTree = "<group>"; };
+		8FF0C19E1DE7498200C0528F /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = thirdlib/WebImage.framework; sourceTree = "<group>"; };
 		BE164DCA1DE6BD80004CE859 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = thirdlib/AFNetworking.framework; sourceTree = "<group>"; };
 		BE164DCC1DE6C889004CE859 /* MedicineNetworkImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineNetworkImpl.swift; sourceTree = "<group>"; };
 		BE164DCE1DE6DCD2004CE859 /* MedicineRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineRootViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE164DCB1DE6BD81004CE859 /* AFNetworking.framework in Frameworks */,
+				8FF0C19B1DE747CF00C0528F /* AFNetworking.framework in Frameworks */,
+				8FF0C19F1DE7498200C0528F /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +78,7 @@
 		BE164DD01DE6DD17004CE859 /* homepage */ = {
 			isa = PBXGroup;
 			children = (
+				8FF0C1961DE73CE700C0528F /* HomePageSlideAd.swift */,
 				BE164DD51DE6DDC8004CE859 /* HomePageViewController.swift */,
 			);
 			name = homepage;
@@ -130,6 +151,7 @@
 		BE655F891DE56CAC005295AC /* thirdlib */ = {
 			isa = PBXGroup;
 			children = (
+				8FF0C19E1DE7498200C0528F /* WebImage.framework */,
 				BE164DCA1DE6BD80004CE859 /* AFNetworking.framework */,
 			);
 			name = thirdlib;
@@ -200,6 +222,7 @@
 				BE4ACA921DDEAF9500CE0D31 /* Sources */,
 				BE4ACA931DDEAF9500CE0D31 /* Frameworks */,
 				BE4ACA941DDEAF9500CE0D31 /* Resources */,
+				8FF0C19D1DE747CF00C0528F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +294,7 @@
 				BE164DCF1DE6DCD2004CE859 /* MedicineRootViewController.swift in Sources */,
 				BE655F931DE56EBF005295AC /* ProtocalManager.swift in Sources */,
 				BE4ACA9C1DDEAF9500CE0D31 /* ViewController.swift in Sources */,
+				8FF0C1971DE73CE700C0528F /* HomePageSlideAd.swift in Sources */,
 				BE164DDA1DE6E1E8004CE859 /* ProductViewController.swift in Sources */,
 				BE164DD81DE6DE32004CE859 /* MedicineBaseViewController.swift in Sources */,
 				BE4ACA9A1DDEAF9500CE0D31 /* AppDelegate.swift in Sources */,
