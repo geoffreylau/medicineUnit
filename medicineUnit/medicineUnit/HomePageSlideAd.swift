@@ -15,9 +15,6 @@ import UIKit
     @objc optional func backScrollerViewForWidthAndHeight()->CGSize
 }
 
-let kScreenWidth = UIScreen.main.bounds.size.width
-
-
 @objc class HomePageSlideAd: UIViewController,UIScrollViewDelegate{
 
     var delegate : HomePageSlideAdDelegate!
@@ -31,17 +28,14 @@ let kScreenWidth = UIScreen.main.bounds.size.width
     var scrollerViewWidth : CGFloat?
     var scrollerViewHeight : CGFloat?
     var pageControl : UIPageControl?
-    
-    
-    
     var isPageControl : NSNumber!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.view.backgroundColor = UIColor.clear
+        
         self.currentIndex = 0
-        self.scrollerViewWidth = kScreenWidth-20
-        self.scrollerViewHeight = 300
         let size : CGSize = self.delegate.backScrollerViewForWidthAndHeight!()
         self.scrollerViewWidth = size.width
         self.scrollerViewHeight = size.height
@@ -52,7 +46,6 @@ let kScreenWidth = UIScreen.main.bounds.size.width
             self.configurePageController()
         }
         Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(HomePageSlideAd.letItScroll), userInfo: nil, repeats: true)
-        self.view.backgroundColor = UIColor.red
     }
     
     func letItScroll(){
@@ -61,9 +54,9 @@ let kScreenWidth = UIScreen.main.bounds.size.width
     
     func configureScrollerView(){
         self.scrollerView = UIScrollView(frame: CGRect(x: 0, y: 0, width: self.scrollerViewWidth!, height: self.scrollerViewHeight!))
-        self.scrollerView?.backgroundColor = UIColor.red
+        self.scrollerView?.backgroundColor = UIColor.clear
         self.scrollerView?.delegate = self
-        self.scrollerView?.contentSize = CGSize(width: self.scrollerViewWidth! * 3, height: self.scrollerViewHeight!)
+        self.scrollerView?.contentSize = CGSize(width: self.scrollerViewWidth! * 3, height: 0)
         self.scrollerView?.contentOffset = CGPoint(x: self.scrollerViewWidth!, y: 0)
         self.scrollerView?.isPagingEnabled = true
         self.scrollerView?.bounces = false
@@ -74,7 +67,6 @@ let kScreenWidth = UIScreen.main.bounds.size.width
         self.leftImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.scrollerViewWidth!, height: self.scrollerViewHeight!))
         self.middleImageView = UIImageView(frame: CGRect(x:self.scrollerViewWidth!, y:0, width:self.scrollerViewWidth!, height:self.scrollerViewHeight! ));
         self.rightImageView = UIImageView(frame: CGRect(x:2*self.scrollerViewWidth!, y:0, width: self.scrollerViewWidth!, height: self.scrollerViewHeight!));
-        
         
         self.scrollerView?.showsHorizontalScrollIndicator = false
         if(self.dataSource?.count != 0){
@@ -88,9 +80,6 @@ let kScreenWidth = UIScreen.main.bounds.size.width
         self.scrollerView?.addSubview(self.rightImageView!)
         
     }
-    
-    
-    
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offset = scrollView.contentOffset.x

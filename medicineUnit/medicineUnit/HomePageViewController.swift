@@ -8,22 +8,26 @@
 
 import UIKit
 
-let screenWidth =  UIScreen.main.bounds.size.width
-
 class HomePageViewController: MedicineBaseViewController, HomePageSlideAdDelegate {
     var slideAd : HomePageSlideAd!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.isNavigationBarHidden = true
+        
         slideAd = HomePageSlideAd()
         slideAd.delegate = self
         slideAd.isPageControl = true
         self.addChildViewController(slideAd)
         self.view.addSubview(slideAd.view)
-        slideAd.view.frame = CGRect(x:10, y:50, width:screenWidth-20, height:260);
+        slideAd.view.frame = CGRect(x:0, y:0, width:kScreenWidth, height:220);
         let tap = UITapGestureRecognizer(target: self, action: Selector(("handleTapAction:")))
         slideAd.view.addGestureRecognizer(tap)
+    }
+    
+    override var prefersStatusBarHidden: Bool{
+        return true
     }
     
     func backDataSourceArray() -> NSMutableArray {
@@ -31,7 +35,7 @@ class HomePageViewController: MedicineBaseViewController, HomePageSlideAdDelegat
     }
     
     func backScrollerViewForWidthAndHeight() -> CGSize {
-        return CGSize(width: screenWidth-20, height: 260)
+        return CGSize(width: kScreenWidth, height: 200)
     }
     
     func handleTapAction(tap:UITapGestureRecognizer)->Void{

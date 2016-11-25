@@ -13,6 +13,6 @@ class MedicineBaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.title = self.tabBarItem.title
     }
 }

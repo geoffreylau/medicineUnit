@@ -15,7 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        self.window = UIWindow(frame: UIScreen.main.applicationFrame)
+        application.isStatusBarHidden = true
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
         let rootController = MedicineRootViewController()
         self.window?.rootViewController = rootController
         self.window?.makeKeyAndVisible()
