@@ -9,7 +9,7 @@
 import UIKit
 
 class HomePageViewController: MedicineBaseViewController, HomePageSlideAdDelegate {
-    var slideAd : HomePageSlideAd!
+    private var slideAd : HomePageSlideAd!
     
     override func viewDidLoad() {
         super.viewDidLoad()

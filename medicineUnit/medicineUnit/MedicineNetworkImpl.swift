@@ -18,7 +18,7 @@ class MedicineNetworkImpl: MedicineNetworkProtocal {
         manager.post(url, parameters: jsonBody, progress: nil, success: { (task:URLSessionDataTask?, responseObj:Any?) in
             success(task, responseObj)
         },failure: { (task:URLSessionDataTask?, error: Error) in
-                fail(task, error)
+            fail(task, error)
         })
     }
 }

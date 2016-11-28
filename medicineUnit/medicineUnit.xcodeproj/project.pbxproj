@@ -18,6 +18,11 @@
 		BE164DDC1DE6E264004CE859 /* ResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DDB1DE6E264004CE859 /* ResourceViewController.swift */; };
 		BE164DDE1DE6E27F004CE859 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DDD1DE6E27F004CE859 /* MeViewController.swift */; };
 		BE164DE01DE6E29E004CE859 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DDF1DE6E29E004CE859 /* LoginViewController.swift */; };
+		BE2AD10F1DEC028C000C5F44 /* HomePageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2AD10E1DEC028C000C5F44 /* HomePageInteractor.swift */; };
+		BE2AD1111DEC04D8000C5F44 /* MedicineUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2AD1101DEC04D8000C5F44 /* MedicineUtil.swift */; };
+		BE2AD1131DEC0E2A000C5F44 /* MedicineBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2AD1121DEC0E2A000C5F44 /* MedicineBaseModel.swift */; };
+		BE2AD1151DEC0E55000C5F44 /* HomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2AD1141DEC0E55000C5F44 /* HomePageModel.swift */; };
+		BE2AD1191DEC2CC1000C5F44 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2AD1181DEC2CC1000C5F44 /* SwiftyJSON.framework */; };
 		BE4ACA9A1DDEAF9500CE0D31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4ACA991DDEAF9500CE0D31 /* AppDelegate.swift */; };
 		BE4ACAA11DDEAF9500CE0D31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4ACAA01DDEAF9500CE0D31 /* Assets.xcassets */; };
 		BE655F931DE56EBF005295AC /* ProtocalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE655F921DE56EBF005295AC /* ProtocalManager.swift */; };
@@ -54,6 +59,11 @@
 		BE164DDB1DE6E264004CE859 /* ResourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceViewController.swift; sourceTree = "<group>"; };
 		BE164DDD1DE6E27F004CE859 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		BE164DDF1DE6E29E004CE859 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BE2AD10E1DEC028C000C5F44 /* HomePageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageInteractor.swift; sourceTree = "<group>"; };
+		BE2AD1101DEC04D8000C5F44 /* MedicineUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineUtil.swift; sourceTree = "<group>"; };
+		BE2AD1121DEC0E2A000C5F44 /* MedicineBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineBaseModel.swift; sourceTree = "<group>"; };
+		BE2AD1141DEC0E55000C5F44 /* HomePageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageModel.swift; sourceTree = "<group>"; };
+		BE2AD1181DEC2CC1000C5F44 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = thirdlib/SwiftyJSON.framework; sourceTree = "<group>"; };
 		BE4ACA961DDEAF9500CE0D31 /* medicineUnit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medicineUnit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4ACA991DDEAF9500CE0D31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE4ACAA01DDEAF9500CE0D31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +81,7 @@
 			files = (
 				8FF0C19B1DE747CF00C0528F /* AFNetworking.framework in Frameworks */,
 				BE69EE981DE7EAFF0084EA4B /* WebImage.framework in Frameworks */,
+				BE2AD1191DEC2CC1000C5F44 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +93,8 @@
 			children = (
 				8FF0C1961DE73CE700C0528F /* HomePageSlideAd.swift */,
 				BE164DD51DE6DDC8004CE859 /* HomePageViewController.swift */,
+				BE2AD10E1DEC028C000C5F44 /* HomePageInteractor.swift */,
+				BE2AD1141DEC0E55000C5F44 /* HomePageModel.swift */,
 			);
 			name = homepage;
 			sourceTree = "<group>";
@@ -152,6 +165,7 @@
 		BE655F891DE56CAC005295AC /* thirdlib */ = {
 			isa = PBXGroup;
 			children = (
+				BE2AD1181DEC2CC1000C5F44 /* SwiftyJSON.framework */,
 				8FF0C19E1DE7498200C0528F /* WebImage.framework */,
 				BE164DCA1DE6BD80004CE859 /* AFNetworking.framework */,
 			);
@@ -210,6 +224,8 @@
 				BE164DCE1DE6DCD2004CE859 /* MedicineRootViewController.swift */,
 				BE164DD71DE6DE32004CE859 /* MedicineBaseViewController.swift */,
 				BE69EE9A1DE815310084EA4B /* MedicineConstants.swift */,
+				BE2AD1101DEC04D8000C5F44 /* MedicineUtil.swift */,
+				BE2AD1121DEC0E2A000C5F44 /* MedicineBaseModel.swift */,
 			);
 			name = common;
 			sourceTree = "<group>";
@@ -291,12 +307,16 @@
 				BE164DDC1DE6E264004CE859 /* ResourceViewController.swift in Sources */,
 				BE164DDE1DE6E27F004CE859 /* MeViewController.swift in Sources */,
 				BE655F971DE56FBF005295AC /* MedicineNetworkProtocal.swift in Sources */,
+				BE2AD1151DEC0E55000C5F44 /* HomePageModel.swift in Sources */,
 				BE164DD61DE6DDC8004CE859 /* HomePageViewController.swift in Sources */,
 				BE164DCD1DE6C889004CE859 /* MedicineNetworkImpl.swift in Sources */,
+				BE2AD10F1DEC028C000C5F44 /* HomePageInteractor.swift in Sources */,
 				BE164DCF1DE6DCD2004CE859 /* MedicineRootViewController.swift in Sources */,
 				BE655F931DE56EBF005295AC /* ProtocalManager.swift in Sources */,
+				BE2AD1111DEC04D8000C5F44 /* MedicineUtil.swift in Sources */,
 				8FF0C1971DE73CE700C0528F /* HomePageSlideAd.swift in Sources */,
 				BE164DDA1DE6E1E8004CE859 /* ProductViewController.swift in Sources */,
+				BE2AD1131DEC0E2A000C5F44 /* MedicineBaseModel.swift in Sources */,
 				BE164DD81DE6DE32004CE859 /* MedicineBaseViewController.swift in Sources */,
 				BE69EE9B1DE815310084EA4B /* MedicineConstants.swift in Sources */,
 				BE4ACA9A1DDEAF9500CE0D31 /* AppDelegate.swift in Sources */,

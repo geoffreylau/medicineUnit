@@ -1,26 +1,26 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "64F2CB08D5C8CD22AFAD99EFE729CBE00A09DFDE",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "aad81c9a-cc77-4245-822d-168ee7e7ae97++5656+++6055610",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
-    "64F2CB08D5C8CD22AFAD99EFE729CBE00A09DFDE" : {
+    "aad81c9a-cc77-4245-822d-168ee7e7ae97++4158+++E6412EF" : {
 
     },
-    "aad81c9a-cc77-4245-822d-168ee7e7ae97++4158" : {
+    "aad81c9a-cc77-4245-822d-168ee7e7ae97++5656+++6055610" : {
 
     },
-    "aad81c9a-cc77-4245-822d-168ee7e7ae97++5656" : {
+    "aad81c9a-cc77-4245-822d-168ee7e7ae97++5656+++D9C2CB7" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "64F2CB08D5C8CD22AFAD99EFE729CBE00A09DFDE" : 9223372036854775807,
-    "aad81c9a-cc77-4245-822d-168ee7e7ae97++4158" : 9223372036854775807,
-    "aad81c9a-cc77-4245-822d-168ee7e7ae97++5656" : 9223372036854775807
+    "aad81c9a-cc77-4245-822d-168ee7e7ae97++4158+++E6412EF" : 9223372036854775807,
+    "aad81c9a-cc77-4245-822d-168ee7e7ae97++5656+++6055610" : 9223372036854775807,
+    "aad81c9a-cc77-4245-822d-168ee7e7ae97++5656+++D9C2CB7" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CD7AFD8F-C7CD-4D41-8DC4-D01BE01B17CF",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "64F2CB08D5C8CD22AFAD99EFE729CBE00A09DFDE" : "medicineUnit\/",
-    "aad81c9a-cc77-4245-822d-168ee7e7ae97++4158" : "",
-    "aad81c9a-cc77-4245-822d-168ee7e7ae97++5656" : "medicineUnit\/"
+    "aad81c9a-cc77-4245-822d-168ee7e7ae97++4158+++E6412EF" : "",
+    "aad81c9a-cc77-4245-822d-168ee7e7ae97++5656+++6055610" : "medicineUnit\/",
+    "aad81c9a-cc77-4245-822d-168ee7e7ae97++5656+++D9C2CB7" : "medicineUnit\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "medicineUnit",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -29,17 +29,17 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.paic.com.cn\/svn\/nts_cfb_web",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "64F2CB08D5C8CD22AFAD99EFE729CBE00A09DFDE"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "aad81c9a-cc77-4245-822d-168ee7e7ae97++4158+++E6412EF"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.paic.com.cn\/svn\/nts_cfb_web",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "aad81c9a-cc77-4245-822d-168ee7e7ae97++4158"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "aad81c9a-cc77-4245-822d-168ee7e7ae97++5656+++6055610"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/geoffreylau\/medicineUnit.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "aad81c9a-cc77-4245-822d-168ee7e7ae97++5656"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "aad81c9a-cc77-4245-822d-168ee7e7ae97++5656+++D9C2CB7"
     }
   ]
 }
