@@ -10,12 +10,14 @@ import UIKit
 
 class HomePageViewController: MedicineBaseViewController, HomePageSlideAdDelegate {
     private var slideAd : HomePageSlideAd!
+    private var interactor : HomePageInteractor!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.isNavigationBarHidden = true
         
+        interactor = HomePageInteractor()
         slideAd = HomePageSlideAd()
         slideAd.delegate = self
         slideAd.isPageControl = true
@@ -31,6 +33,7 @@ class HomePageViewController: MedicineBaseViewController, HomePageSlideAdDelegat
     }
     
     func backDataSourceArray() -> NSMutableArray {
+        interactor.getAdList()
         return ["http://img0.bdstatic.com/img/image/shouye/sheying1124.jpg","http://img0.bdstatic.com/img/image/shouye/bizhi1124.jpg","http://img0.bdstatic.com/img/image/shouye/mingxing1124.jpg","http://img0.bdstatic.com/img/image/shouye/chongwu1124.jpg","http://img0.bdstatic.com/img/image/shouye/dongman1124.jpg"];
     }
     

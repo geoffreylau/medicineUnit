@@ -3,3 +3,4 @@
 //
 #import <AFNetworking/AFNetworking.h>
 #import <WebImage/WebImage.h>
+#import <CommonCrypto/CommonDigest.h>

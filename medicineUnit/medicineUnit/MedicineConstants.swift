@@ -15,7 +15,7 @@ public let kScreenHeight = UIScreen.main.bounds.size.height
 /**
  * API url
  **/
-public let kSlideAdUrl = "https://ip:port//rest/app/slidePhoto"
+public let kSlideAdUrl = "https://aiyaobang.com:7443//rest/app/slidePhoto"
 //deviceID
 public let kIDFA : String! = ASIdentifierManager.shared().advertisingIdentifier.uuidString
 //appID

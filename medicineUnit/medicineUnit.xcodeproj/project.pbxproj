@@ -22,7 +22,6 @@
 		BE2AD1111DEC04D8000C5F44 /* MedicineUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2AD1101DEC04D8000C5F44 /* MedicineUtil.swift */; };
 		BE2AD1131DEC0E2A000C5F44 /* MedicineBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2AD1121DEC0E2A000C5F44 /* MedicineBaseModel.swift */; };
 		BE2AD1151DEC0E55000C5F44 /* HomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2AD1141DEC0E55000C5F44 /* HomePageModel.swift */; };
-		BE2AD1191DEC2CC1000C5F44 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2AD1181DEC2CC1000C5F44 /* SwiftyJSON.framework */; };
 		BE4ACA9A1DDEAF9500CE0D31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4ACA991DDEAF9500CE0D31 /* AppDelegate.swift */; };
 		BE4ACAA11DDEAF9500CE0D31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4ACAA01DDEAF9500CE0D31 /* Assets.xcassets */; };
 		BE655F931DE56EBF005295AC /* ProtocalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE655F921DE56EBF005295AC /* ProtocalManager.swift */; };
@@ -30,6 +29,9 @@
 		BE69EE981DE7EAFF0084EA4B /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF0C19E1DE7498200C0528F /* WebImage.framework */; };
 		BE69EE991DE7EAFF0084EA4B /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF0C19E1DE7498200C0528F /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE69EE9B1DE815310084EA4B /* MedicineConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE69EE9A1DE815310084EA4B /* MedicineConstants.swift */; };
+		BEFF7F0E1DED2ADF008F5DE3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF7F0D1DED2ADF008F5DE3 /* StringExtension.swift */; };
+		BEFF7F0F1DED30B6008F5DE3 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2AD1181DEC2CC1000C5F44 /* SwiftyJSON.framework */; };
+		BEFF7F101DED30B6008F5DE3 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE2AD1181DEC2CC1000C5F44 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +43,7 @@
 			files = (
 				8FF0C19C1DE747CF00C0528F /* AFNetworking.framework in Embed Frameworks */,
 				BE69EE991DE7EAFF0084EA4B /* WebImage.framework in Embed Frameworks */,
+				BEFF7F101DED30B6008F5DE3 /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +75,7 @@
 		BE655F961DE56FBF005295AC /* MedicineNetworkProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineNetworkProtocal.swift; sourceTree = "<group>"; };
 		BE655F981DE59D7D005295AC /* medicineUnit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "medicineUnit-Bridging-Header.h"; sourceTree = "<group>"; };
 		BE69EE9A1DE815310084EA4B /* MedicineConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineConstants.swift; sourceTree = "<group>"; };
+		BEFF7F0D1DED2ADF008F5DE3 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +85,7 @@
 			files = (
 				8FF0C19B1DE747CF00C0528F /* AFNetworking.framework in Frameworks */,
 				BE69EE981DE7EAFF0084EA4B /* WebImage.framework in Frameworks */,
-				BE2AD1191DEC2CC1000C5F44 /* SwiftyJSON.framework in Frameworks */,
+				BEFF7F0F1DED30B6008F5DE3 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +230,7 @@
 				BE69EE9A1DE815310084EA4B /* MedicineConstants.swift */,
 				BE2AD1101DEC04D8000C5F44 /* MedicineUtil.swift */,
 				BE2AD1121DEC0E2A000C5F44 /* MedicineBaseModel.swift */,
+				BEFF7F0D1DED2ADF008F5DE3 /* StringExtension.swift */,
 			);
 			name = common;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 				8FF0C1971DE73CE700C0528F /* HomePageSlideAd.swift in Sources */,
 				BE164DDA1DE6E1E8004CE859 /* ProductViewController.swift in Sources */,
 				BE2AD1131DEC0E2A000C5F44 /* MedicineBaseModel.swift in Sources */,
+				BEFF7F0E1DED2ADF008F5DE3 /* StringExtension.swift in Sources */,
 				BE164DD81DE6DE32004CE859 /* MedicineBaseViewController.swift in Sources */,
 				BE69EE9B1DE815310084EA4B /* MedicineConstants.swift in Sources */,
 				BE4ACA9A1DDEAF9500CE0D31 /* AppDelegate.swift in Sources */,
