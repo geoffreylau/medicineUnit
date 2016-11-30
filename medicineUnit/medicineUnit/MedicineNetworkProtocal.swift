@@ -8,11 +8,11 @@
 
 import UIKit
 
-typealias medicineResponseSuccessBlock = (_ task:URLSessionTask?, _ responseObj: Any?) -> Void
-typealias medicineResponseFailBlock = (_ task:URLSessionTask?, _ responeseObj: Error?) -> Void
+typealias medicineResponseSuccessBlock = (_ operation:AFHTTPRequestOperation?, _ responseObj: Any?) -> Void
+typealias medicineResponseFailBlock = (_ operaton:AFHTTPRequestOperation?, _ responeseObj: Error?) -> Void
 
 protocol MedicineNetworkProtocal {
-    func postRequestWithUrl(_ url:String, jsonBody:String,
+    func postRequestWithUrl(_ url:String?, jsonBody:Dictionary?,
                             success: @escaping medicineResponseSuccessBlock,
                             fail: @escaping medicineResponseFailBlock)
 }

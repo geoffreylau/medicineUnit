@@ -19,7 +19,7 @@ class HomePageInteractor {
         networkProtocol.postRequestWithUrl(kSlideAdUrl, jsonBody: json.stringValue, success: { (task:URLSessionTask?, responseObj:Any?) in
             let responseObj : Any? = responseObj
         }, fail:{ (task:URLSessionTask?, error:Error?) in
-            print(error?.localizedDescription)
+            print(error.debugDescription)
         })
         
         return []

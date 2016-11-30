@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8FF0C1971DE73CE700C0528F /* HomePageSlideAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0C1961DE73CE700C0528F /* HomePageSlideAd.swift */; };
-		8FF0C19B1DE747CF00C0528F /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE164DCA1DE6BD80004CE859 /* AFNetworking.framework */; };
-		8FF0C19C1DE747CF00C0528F /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE164DCA1DE6BD80004CE859 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE164DCD1DE6C889004CE859 /* MedicineNetworkImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DCC1DE6C889004CE859 /* MedicineNetworkImpl.swift */; };
 		BE164DCF1DE6DCD2004CE859 /* MedicineRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DCE1DE6DCD2004CE859 /* MedicineRootViewController.swift */; };
 		BE164DD61DE6DDC8004CE859 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE164DD51DE6DDC8004CE859 /* HomePageViewController.swift */; };
@@ -32,6 +30,7 @@
 		BEFF7F0E1DED2ADF008F5DE3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF7F0D1DED2ADF008F5DE3 /* StringExtension.swift */; };
 		BEFF7F0F1DED30B6008F5DE3 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2AD1181DEC2CC1000C5F44 /* SwiftyJSON.framework */; };
 		BEFF7F101DED30B6008F5DE3 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE2AD1181DEC2CC1000C5F44 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BEFF7F121DEEE99A008F5DE3 /* AFNetworking in Resources */ = {isa = PBXBuildFile; fileRef = BEFF7F111DEEE99A008F5DE3 /* AFNetworking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,7 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8FF0C19C1DE747CF00C0528F /* AFNetworking.framework in Embed Frameworks */,
 				BE69EE991DE7EAFF0084EA4B /* WebImage.framework in Embed Frameworks */,
 				BEFF7F101DED30B6008F5DE3 /* SwiftyJSON.framework in Embed Frameworks */,
 			);
@@ -53,7 +51,6 @@
 /* Begin PBXFileReference section */
 		8FF0C1961DE73CE700C0528F /* HomePageSlideAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageSlideAd.swift; sourceTree = "<group>"; };
 		8FF0C19E1DE7498200C0528F /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = thirdlib/WebImage.framework; sourceTree = "<group>"; };
-		BE164DCA1DE6BD80004CE859 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = thirdlib/AFNetworking.framework; sourceTree = "<group>"; };
 		BE164DCC1DE6C889004CE859 /* MedicineNetworkImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineNetworkImpl.swift; sourceTree = "<group>"; };
 		BE164DCE1DE6DCD2004CE859 /* MedicineRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineRootViewController.swift; sourceTree = "<group>"; };
 		BE164DD51DE6DDC8004CE859 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +73,7 @@
 		BE655F981DE59D7D005295AC /* medicineUnit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "medicineUnit-Bridging-Header.h"; sourceTree = "<group>"; };
 		BE69EE9A1DE815310084EA4B /* MedicineConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineConstants.swift; sourceTree = "<group>"; };
 		BEFF7F0D1DED2ADF008F5DE3 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		BEFF7F111DEEE99A008F5DE3 /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AFNetworking; path = thirdlib/AFNetworking; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +81,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FF0C19B1DE747CF00C0528F /* AFNetworking.framework in Frameworks */,
 				BE69EE981DE7EAFF0084EA4B /* WebImage.framework in Frameworks */,
 				BEFF7F0F1DED30B6008F5DE3 /* SwiftyJSON.framework in Frameworks */,
 			);
@@ -169,9 +166,9 @@
 		BE655F891DE56CAC005295AC /* thirdlib */ = {
 			isa = PBXGroup;
 			children = (
+				BEFF7F111DEEE99A008F5DE3 /* AFNetworking */,
 				BE2AD1181DEC2CC1000C5F44 /* SwiftyJSON.framework */,
 				8FF0C19E1DE7498200C0528F /* WebImage.framework */,
-				BE164DCA1DE6BD80004CE859 /* AFNetworking.framework */,
 			);
 			name = thirdlib;
 			sourceTree = "<group>";
@@ -298,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE4ACAA11DDEAF9500CE0D31 /* Assets.xcassets in Resources */,
+				BEFF7F121DEEE99A008F5DE3 /* AFNetworking in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,11 +435,13 @@
 				INFOPLIST_FILE = medicineUnit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/medicineUnit/thirdlib/AFNetworking";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingan.medicineUnit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "medicineUnit/medicineUnit-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 			};
 			name = Debug;
 		};
@@ -459,10 +459,12 @@
 				INFOPLIST_FILE = medicineUnit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/medicineUnit/thirdlib/AFNetworking";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingan.medicineUnit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "medicineUnit/medicineUnit-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 			};
 			name = Release;
 		};

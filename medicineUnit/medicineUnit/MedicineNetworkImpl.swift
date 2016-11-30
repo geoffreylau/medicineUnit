@@ -10,20 +10,17 @@ import UIKit
 
 class MedicineNetworkImpl: MedicineNetworkProtocal {
 
-    func postRequestWithUrl(_ url: String,
-                            jsonBody: String,
+    func postRequestWithUrl(_ url: String?,
+                            jsonBody: Dictionary?,
                             success: @escaping medicineResponseSuccessBlock,
                             fail: @escaping medicineResponseFailBlock) {
-        let manager = AFHTTPSessionManager()
-        let securityPolicy : AFSecurityPolicy = AFSecurityPolicy(pinningMode: AFSSLPinningMode.none)
+        let manager = AFHTTPRequestOperationManager()
+        manager.responseSerializer = AFJSONResponseSerializer
         
-        securityPolicy.allowInvalidCertificates = true
-        securityPolicy.validatesDomainName = true
-        manager.securityPolicy = securityPolicy
-        manager.post(url, parameters: jsonBody, progress: nil, success: { (task:URLSessionDataTask?, responseObj:Any?) in
-            success(task, responseObj)
-        },failure: { (task:URLSessionDataTask?, error: Error) in
-            fail(task, error)
-        })
+        manager.post(url, parameters: jsonBody, success: { (opertaion:AFHTTPRequestOperation?, responseObj:Any?) in
+                success(opertaion, responseObj)
+        }) { (opertaion:AFHTTPRequestOperation?, error:Error?) in
+            fail(opertaion, error)
+        }
     }
 }
