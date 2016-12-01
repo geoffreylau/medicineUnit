@@ -15,10 +15,10 @@ class HomePageInteractor {
     
     public func getAdList() -> [HomePageModel]{
         let timeStr : String = MedicineUtil.formateDate(date: Date(), format: "yyyyMMddHHmmss")
-        let json : JSON = JSON(["messageId":kIDFA,"transTime":timeStr,"digest":MedicineUtil.createDigest(),"number":"5"])
-        networkProtocol.postRequestWithUrl(kSlideAdUrl, jsonBody: json.stringValue, success: { (task:URLSessionTask?, responseObj:Any?) in
+        let json : Dictionary = ["messageId":kIDFA,"transTime":timeStr,"digest":MedicineUtil.createDigest(),"number":"5"]
+        networkProtocol.postRequestWithUrl(kSlideAdUrl, jsonBody: json, success: { (task:AFHTTPRequestOperation?, responseObj:Any?) in
             let responseObj : Any? = responseObj
-        }, fail:{ (task:URLSessionTask?, error:Error?) in
+        }, fail:{ (task:AFHTTPRequestOperation?, error:Error?) in
             print(error.debugDescription)
         })
         

@@ -27,6 +27,8 @@
 		BE69EE981DE7EAFF0084EA4B /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF0C19E1DE7498200C0528F /* WebImage.framework */; };
 		BE69EE991DE7EAFF0084EA4B /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF0C19E1DE7498200C0528F /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE69EE9B1DE815310084EA4B /* MedicineConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE69EE9A1DE815310084EA4B /* MedicineConstants.swift */; };
+		BE77C6F81DF0341C001D7A0F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE77C6F71DF0341C001D7A0F /* Alamofire.framework */; };
+		BE77C6FA1DF0342B001D7A0F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE77C6F71DF0341C001D7A0F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BEFF7F0E1DED2ADF008F5DE3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF7F0D1DED2ADF008F5DE3 /* StringExtension.swift */; };
 		BEFF7F0F1DED30B6008F5DE3 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2AD1181DEC2CC1000C5F44 /* SwiftyJSON.framework */; };
 		BEFF7F101DED30B6008F5DE3 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE2AD1181DEC2CC1000C5F44 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -41,6 +43,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				BE69EE991DE7EAFF0084EA4B /* WebImage.framework in Embed Frameworks */,
+				BE77C6FA1DF0342B001D7A0F /* Alamofire.framework in Embed Frameworks */,
 				BEFF7F101DED30B6008F5DE3 /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -72,8 +75,12 @@
 		BE655F961DE56FBF005295AC /* MedicineNetworkProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineNetworkProtocal.swift; sourceTree = "<group>"; };
 		BE655F981DE59D7D005295AC /* medicineUnit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "medicineUnit-Bridging-Header.h"; sourceTree = "<group>"; };
 		BE69EE9A1DE815310084EA4B /* MedicineConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineConstants.swift; sourceTree = "<group>"; };
+		BE77C6F01DF008A8001D7A0F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BE77C6F31DF02377001D7A0F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BE77C6F51DF02388001D7A0F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BE77C6F71DF0341C001D7A0F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = thirdlib/Alamofire.framework; sourceTree = "<group>"; };
 		BEFF7F0D1DED2ADF008F5DE3 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		BEFF7F111DEEE99A008F5DE3 /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AFNetworking; path = thirdlib/AFNetworking; sourceTree = "<group>"; };
+		BEFF7F111DEEE99A008F5DE3 /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AFNetworking; path = /Users/geo/develop/project/medicineUnit/medicineUnit/medicineUnit/thirdlib/AFNetworking; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE69EE981DE7EAFF0084EA4B /* WebImage.framework in Frameworks */,
+				BE77C6F81DF0341C001D7A0F /* Alamofire.framework in Frameworks */,
 				BEFF7F0F1DED30B6008F5DE3 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +145,7 @@
 			children = (
 				BE4ACA981DDEAF9500CE0D31 /* medicineUnit */,
 				BE4ACA971DDEAF9500CE0D31 /* Products */,
+				BE77C6EF1DF008A8001D7A0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,7 +175,7 @@
 		BE655F891DE56CAC005295AC /* thirdlib */ = {
 			isa = PBXGroup;
 			children = (
-				BEFF7F111DEEE99A008F5DE3 /* AFNetworking */,
+				BE77C6F71DF0341C001D7A0F /* Alamofire.framework */,
 				BE2AD1181DEC2CC1000C5F44 /* SwiftyJSON.framework */,
 				8FF0C19E1DE7498200C0528F /* WebImage.framework */,
 			);
@@ -230,6 +239,16 @@
 				BEFF7F0D1DED2ADF008F5DE3 /* StringExtension.swift */,
 			);
 			name = common;
+			sourceTree = "<group>";
+		};
+		BE77C6EF1DF008A8001D7A0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE77C6F51DF02388001D7A0F /* MobileCoreServices.framework */,
+				BE77C6F31DF02377001D7A0F /* SystemConfiguration.framework */,
+				BE77C6F01DF008A8001D7A0F /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,6 +443,7 @@
 		BE4ACAA91DDEAF9500CE0D31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
@@ -436,18 +456,22 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/medicineUnit/thirdlib/AFNetworking";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingan.medicineUnit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "medicineUnit/medicineUnit-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
 		BE4ACAAA1DDEAF9500CE0D31 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
@@ -460,6 +484,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/medicineUnit/thirdlib/AFNetworking";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingan.medicineUnit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "medicineUnit/medicineUnit-Bridging-Header.h";

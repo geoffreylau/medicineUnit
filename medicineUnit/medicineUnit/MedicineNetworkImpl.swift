@@ -11,11 +11,11 @@ import UIKit
 class MedicineNetworkImpl: MedicineNetworkProtocal {
 
     func postRequestWithUrl(_ url: String?,
-                            jsonBody: Dictionary?,
+                            jsonBody: [AnyHashable:Any]?,
                             success: @escaping medicineResponseSuccessBlock,
                             fail: @escaping medicineResponseFailBlock) {
         let manager = AFHTTPRequestOperationManager()
-        manager.responseSerializer = AFJSONResponseSerializer
+        manager.responseSerializer = AFJSONResponseSerializer()
         
         manager.post(url, parameters: jsonBody, success: { (opertaion:AFHTTPRequestOperation?, responseObj:Any?) in
                 success(opertaion, responseObj)

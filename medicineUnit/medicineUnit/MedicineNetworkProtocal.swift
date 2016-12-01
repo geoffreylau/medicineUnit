@@ -12,7 +12,7 @@ typealias medicineResponseSuccessBlock = (_ operation:AFHTTPRequestOperation?, _
 typealias medicineResponseFailBlock = (_ operaton:AFHTTPRequestOperation?, _ responeseObj: Error?) -> Void
 
 protocol MedicineNetworkProtocal {
-    func postRequestWithUrl(_ url:String?, jsonBody:Dictionary?,
+    func postRequestWithUrl(_ url:String?, jsonBody:[AnyHashable:Any]?,
                             success: @escaping medicineResponseSuccessBlock,
                             fail: @escaping medicineResponseFailBlock)
 }
