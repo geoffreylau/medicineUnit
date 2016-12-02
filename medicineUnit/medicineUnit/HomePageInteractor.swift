@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import Alamofire
 
 class HomePageInteractor {
     
@@ -15,12 +16,14 @@ class HomePageInteractor {
     
     public func getAdList() -> [HomePageModel]{
         let timeStr : String = MedicineUtil.formateDate(date: Date(), format: "yyyyMMddHHmmss")
-        let json : Dictionary = ["messageId":kIDFA,"transTime":timeStr,"digest":MedicineUtil.createDigest(),"number":"5"]
-        networkProtocol.postRequestWithUrl(kSlideAdUrl, jsonBody: json, success: { (task:AFHTTPRequestOperation?, responseObj:Any?) in
-            let responseObj : Any? = responseObj
-        }, fail:{ (task:AFHTTPRequestOperation?, error:Error?) in
-            print(error.debugDescription)
-        })
+        let json :  = ["messageId":kIDFA,"transTime":timeStr,"digest":MedicineUtil.createDigest(),"number":"5"]
+        networkProtocol.postRequestWithUrl(kSlideAdUrl, jsonBody: json) { response in
+            if(response.result.isSuccess){
+                print("responseJSON: \(response.result.value)")
+            }else{
+                print("error:\(response.result.error.debugDescription)")
+            }
+        }
         
         return []
     }

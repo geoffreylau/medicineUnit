@@ -6,13 +6,12 @@
 //  Copyright © 2016年 Geo. All rights reserved.
 //
 
+import Alamofire
 import UIKit
 
-typealias medicineResponseSuccessBlock = (_ operation:AFHTTPRequestOperation?, _ responseObj: Any?) -> Void
-typealias medicineResponseFailBlock = (_ operaton:AFHTTPRequestOperation?, _ responeseObj: Error?) -> Void
+typealias medicineResponseBlock = (_ response : DataRes) -> Void
 
 protocol MedicineNetworkProtocal {
-    func postRequestWithUrl(_ url:String?, jsonBody:[AnyHashable:Any]?,
-                            success: @escaping medicineResponseSuccessBlock,
-                            fail: @escaping medicineResponseFailBlock)
+    func postRequestWithUrl(_ url:String?, jsonBody:Parameters?,
+                            responseBlock: @escaping medicineResponseBlock)
 }

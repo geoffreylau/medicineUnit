@@ -7,20 +7,17 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
 class MedicineNetworkImpl: MedicineNetworkProtocal {
 
     func postRequestWithUrl(_ url: String?,
-                            jsonBody: [AnyHashable:Any]?,
-                            success: @escaping medicineResponseSuccessBlock,
-                            fail: @escaping medicineResponseFailBlock) {
-        let manager = AFHTTPRequestOperationManager()
-        manager.responseSerializer = AFJSONResponseSerializer()
-        
-        manager.post(url, parameters: jsonBody, success: { (opertaion:AFHTTPRequestOperation?, responseObj:Any?) in
-                success(opertaion, responseObj)
-        }) { (opertaion:AFHTTPRequestOperation?, error:Error?) in
-            fail(opertaion, error)
+                            jsonBody: [String:Any]?,
+                            responseBlock: @escaping medicineResponseBlock) {
+        Alamofire.request(url!, method: .post, parameters: jsonBody, encoding: JSONEncoding.default, headers: [:]).responseJSON { response in
+            responseBlock(response)
         }
+        //Alamofire.request()
     }
 }
